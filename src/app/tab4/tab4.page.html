@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color= "primary">
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+  <form (ngSubmit)=login() #forma="ngForm"></form>
+</ion-header>
+<ion-content >
+<div class="imagenes"></div>
+  
+  <img style=" padding:10px 100px"src="/assets/icon/03.png">
+  
+      <h1 style=" padding:0px 120px; color: #34C455">Regístrate</h1><br>
+   
+  
+    <ion-item>
+        <fieldset style="width: 100%">
+      <legend>Nombre de usuario</legend>
+      <ion-input required ngModel type="text" ngModel #user="ngModel" name="user"  minlength="3" maxlength="50"  ></ion-input></fieldset>
+    </ion-item><br>
+  <ion-item>
+      <fieldset style="width: 100%">
+      <legend>Correo electronico</legend>
+      <ion-input required ngModel type="text" ngModel #user="ngModel" name="user"  minlength="3" maxlength="50"  ></ion-input></fieldset>
+    </ion-item><br>
+    <ion-item>
+        <fieldset style="width: 100%">
+      <legend >Contraseña</legend>
+      <ion-input required ngModel #password="ngModel"  type="password" name="password"  minlength="3" maxlength="50" ></ion-input></fieldset>
+    </ion-item> <br>
+    <ion-item>
+        <fieldset style="width: 100%">
+        <legend >Repite Tu Contraseña</legend>
+        <ion-input required ngModel #password="ngModel"  type="password" name="password"  minlength="3" maxlength="50" ></ion-input></fieldset>
+      </ion-item><br>
+    <ion-button expand="full" type="submit"  routerLink="app/tabs/tab4">Registrarse</ion-button>
+
+
+
+</ion-content>
